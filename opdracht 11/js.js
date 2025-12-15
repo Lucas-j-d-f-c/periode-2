@@ -1,8 +1,12 @@
-const vraag = document.getElementById("vraag");D
-let budget = 100;
+const vraag = document.getElementById("vraag");
+
+
+let budget = prompt("Wat is je budget?");
 
 if (budget > 60) {
-    console.log("je kunt het kopen")
+    vraag.innerHTML = "Je kunt het kopen";
+    vraag.style.backgroundColor = "green";
 }else {
-    console.log("je kunt het niet kopen")
+    vraag.innerHTML = "je kunt het niet kopen";
+    vraag.style.backgroundColor = "red";
 }
