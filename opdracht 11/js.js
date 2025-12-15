@@ -1,4 +1,4 @@
-
+const vraag = document.getElementById("vraag");D
 let budget = 100;
 
 if (budget > 60) {
