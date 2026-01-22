@@ -1,8 +1,11 @@
-let games = ["god of war", "GONE Fishin" , "asseto corsa" , "minecraft" , "far cry 5"]
-document.getElementById("Kaas").innerHTML = games;
+let games = ["asseto corsa", "Minecraft", "Gone fishing", "call of duty", "FIFA"];
 
-console.log(games[0]);
-console.log(games[1]);
-console.log(games[2]);
-console.log(games[3]);
-console.log(games[4]);
+document.getElementById("output").innerHTML = `
+  Eerste item: ${games[0]} <br>
+  Laatste item: ${games[games.length - 1]} <br>
+  Totaal aantal items: ${games.length}
+`;
+games[2] = "Eminem";
+document.getElementById("output2").innerHTML = `
+  Nieuwe lijst: ${games}
+`;
